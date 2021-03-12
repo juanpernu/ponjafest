@@ -1,12 +1,12 @@
 {
   "env": {
-    "MONGODB_URI": "mongodb+srv://jpernumian:Artemis1404@cluster0.xv9ij.mongodb.net/ponjafest?retryWrites=true&w=majority",
-    "PASSWORD": "fullpicado"
+    "MONGODB_URI": "@my-mongodb-uri",
+    "PASSWORD": "@my-pass"
   },
   "build": {
     "env": {
-      "MONGODB_URI": "mongodb+srv://jpernumian:Artemis1404@cluster0.xv9ij.mongodb.net/ponjafest?retryWrites=true&w=majority",
-      "PASSWORD": "fullpicado"
+      "MONGODB_URI": "@my-mongodb-uri",
+      "PASSWORD": "@my-pass"
     }
   }
 }
