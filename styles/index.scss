@@ -46,6 +46,11 @@ label {
   margin-bottom: 8px;
 }
 
+li {
+  list-style: none;
+  margin: 10px 0;
+}
+
 .wrapper {
   max-width: 350px;
   display: flex;

@@ -113,7 +113,7 @@ const Form = ({ formId, guestForm }) => {
       </form>
       <p>{message}</p>
       <div>
-        {Object.keys(errors).map((err, index) => <li key={index}>{errors[err]}</li>)}
+        {Object.keys(errors).map((err, index) => <li className="text" key={index}>{errors[err]}</li>)}
       </div>
     </>
   )
