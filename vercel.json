@@ -1,11 +1,11 @@
 {
   "env": {
-    "MONGODB_URI": "@my-mongodb-uri",
+    "MONGODB_URI": "@fest-mongo",
     "PASSWORD": "@my-pass"
   },
   "build": {
     "env": {
-      "MONGODB_URI": "@my-mongodb-uri",
+      "MONGODB_URI": "@fest-mongo",
       "PASSWORD": "@my-pass"
     }
   }
