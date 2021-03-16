@@ -1,21 +1,11 @@
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 import Link from 'next/link'
+import Unauthorized from '../components/Unauthorized'
 import { parseCookies } from "../utils/cookies"
 
 const Invite = ({ login }) => {
-  const router = useRouter()
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    if (!login) {
-      router.push('/unauthorized')
-    } else {
-      setLoading(false)
-    }
-  }, [])
   return (
-    loading ?
-    <p>Cargando...</p> :
+    !login ?
+    <Unauthorized /> :
     <section className="invite-section">
       <div className="invite-block">
         <h3>¿Cuando?</h3>

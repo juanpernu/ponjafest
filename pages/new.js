@@ -1,19 +1,8 @@
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 import Form from '../components/Form'
+import Unauthorized from '../components/Unauthorized'
 import { parseCookies } from "../utils/cookies"
 
 const NewGuest = ({ login }) => {
-  const router = useRouter()
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    if (!login) {
-      router.push('/unauthorized')
-    } else {
-      setLoading(false)
-    }
-  }, [])
-
   const guestForm = {
     name: '',
     email: '',
@@ -22,8 +11,8 @@ const NewGuest = ({ login }) => {
   }
 
   return (
-    loading ?
-    <p>Cargando...</p> :
+    !login ?
+    <Unauthorized /> :
     <Form formId="guest-form" guestForm={guestForm} />
   )
 }
