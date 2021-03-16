@@ -13,6 +13,16 @@ a {
   text-decoration: none;
 }
 
+code {
+  font-family: 'Operator Mono SSm A','Operator Mono SSm B','Source Code Pro','Menlo','Consolas','Monaco',monospace;
+  background-color: #1b1b1b;
+  color: #f5d67b;
+  padding: 5px 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: auto;
+}
+
 input {
   display: block;
   background-color: rgba(255,255,255, 0.05);
@@ -26,7 +36,7 @@ input {
 
 button {
   color: #000;
-  width: 150px;
+  width: auto;
   padding: 6px 25px;
   font-size: 12px;
   border: 0;
@@ -40,6 +50,10 @@ button {
     background-color: #f1cfaa;
     cursor: pointer;
   }
+}
+
+button a {
+  color: #000;
 }
 
 label {
@@ -95,4 +109,14 @@ li {
 .guest-instagram {
   color: #e6c4a0;
   text-decoration: underline;
+}
+
+.invite-section {
+  text-align: left;
+  width: 90%;
+  padding: 0 20px;
+}
+
+.invite-block {
+  margin-bottom: 40px;
 }
