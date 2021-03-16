@@ -2,7 +2,8 @@ import Form from '../components/Form'
 import Unauthorized from '../components/Unauthorized'
 import { parseCookies } from "../utils/cookies"
 
-const NewGuest = ({ login }) => {
+const NewGuest = ({ data }) => {
+  const isValidUser = data.login && data.login === 'validuser';
   const guestForm = {
     name: '',
     email: '',
@@ -11,15 +12,15 @@ const NewGuest = ({ login }) => {
   }
 
   return (
-    !login ?
-    <Unauthorized /> :
-    <Form formId="guest-form" guestForm={guestForm} />
+    !!isValidUser ?
+    <Form formId="guest-form" guestForm={guestForm} /> :
+    <Unauthorized />
   )
 }
 
 export async function getServerSideProps({ req }) {
-  const { login = false } = parseCookies(req)
-  return { props: { login } }
+  const data = parseCookies(req)
+  return { props: { data } }
 }
 
 export default NewGuest
