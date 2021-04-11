@@ -22,7 +22,7 @@ const Index = ({ password }) => {
         sameSite: true,
         maxAge: 3600,
       })
-      router.push('/new')
+      router.push('/invite')
     } else {
       setErr(true)
     }
