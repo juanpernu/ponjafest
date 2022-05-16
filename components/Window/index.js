@@ -27,8 +27,8 @@ export const Window = () => {
         <span className="divider" />
         <p className="title">📅 ¿Cuando?</p>
         <p className="text">
-          Este <span className="outstanding">Viernes 20 de Mayo</span>, a cenar
-          a partir de las 20hs.
+          Este <span className="outstanding">Jueves 19 de Mayo</span>, a cenar a
+          partir de las 20hs.
         </p>
         <p className="title">📍 ¿Donde?</p>
         <p className="text">

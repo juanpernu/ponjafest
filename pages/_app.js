@@ -9,15 +9,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <CookiesProvider>
       <Head>
-        <title>Ponja Fest 2021</title>
-        <meta property="og:title" content="Ponjafest 2021" />
-        <meta
-          property="og:description"
-          content="17 de Abril | Los 30 que no fueron."
-        />
+        <title>La despediduwu</title>
+        <meta property="og:title" content="La despediduwu 2.0" />
+        <meta property="og:description" content="La despediduwu" />
         <meta
           property="og:image"
-          content="http://euro-travel-example.com/thumbnail.jpg"
+          content="https://images.ctfassets.net/hsst7dmi6ghe/285uZ64eGxSxzBx4S6dpD9/7d034c92e6b148f4afa7d3bbe55c676d/export-for-web.jpg"
         />
         <meta property="og:url" content="https://ponjafest.vercel.app" />
       </Head>
