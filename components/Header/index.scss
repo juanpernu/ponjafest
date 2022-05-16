@@ -1,0 +1,18 @@
+header {
+  color: inherit;
+  background-color: rgb(212, 214, 214);
+  border-bottom: 1px solid #000;
+  height: 20px;
+  display: flex;
+  justify-content: end;
+
+  span {
+    height: 100%;
+    line-height: 20px;
+    padding: 0 6px;
+    border-left: 1px solid #000;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+  }
+}
